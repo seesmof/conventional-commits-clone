@@ -67,19 +67,77 @@
       <div class="container">
         <h1>Conventional Commits 1.0.0</h1>
         <div class="section summary">
-          <h2>Summary</h2>
+          <h2 class="sec-heading bottom-line">Summary</h2>
+          <p class="description">
+            The Conventional Commits specification is a lightweight convention
+            on top of commit messages. It provides an easy set of rules for
+            creating an explicit commit history; which makes it easier to write
+            automated tools on top of. This convention dovetails with
+            <a href="#">SemVer</a>, by describing the features, fixes, and
+            breaking changes made in commit messages.
+          </p>
+          <p class="add-heading">
+            The commit message should be structured as follows:
+          </p>
+          <hr />
+          <pre>
+            <code>
+                &lt;type&gt;[optional scope]: &lt;description&gt;
+
+                [optional body]
+
+                [optional footer(s)]
+            </code>
+          </pre>
+          <hr />
+          <p class="add-heading">
+            The commit contains the following structural elements, to
+            communicate intent to the consumers of your library:
+          </p>
+          <ol class="indent">
+            <li>
+              <b>fix:</b> a commit of the <i>type</i> <code>fix</code> patches a
+              bug in your codebase (this correlates with
+              <code><a href="#">PATCH</a></code> in Semantic Versioning).
+            </li>
+            <li>
+              <b>feat:</b> a commit of the <i>type</i>
+              <code>feat</code> introduces a new feature to the codebase (this
+              correlates with <code><a href="#">MINOR</a></code> in Semantic
+              Versioning).
+            </li>
+            <li>
+              <b>BREAKING CHANGE:</b> a commit that has a footer
+              <code>BREAKING CHANGE:</code>, or appends a <code>!</code> after
+              the type/scope, introduces a breaking API change (correlating with
+              <code><a href="#">MAJOR</a></code> in Semantic Versioning), a
+              BREAKING CHANGE can be part of commits of any <i>type</i>.
+            </li>
+            <li>
+              <b>feat:</b> a commit of the <i>type</i>
+              <code>feat</code> introduces a new feature to the codebase (this
+              correlates with <code><a href="#">minor</a></code> in Semantic
+              Versioning)
+            </li>
+            <li>
+              <b>feat:</b> a commit of the <i>type</i>
+              <code>feat</code> introduces a new feature to the codebase (this
+              correlates with <code><a href="#">minor</a></code> in Semantic
+              Versioning)
+            </li>
+          </ol>
         </div>
         <div class="section examples">
-          <h2>Examples</h2>
+          <h2 class="sec-heading bottom-line">Examples</h2>
         </div>
         <div class="section specification">
-          <h2>Specification</h2>
+          <h2 class="sec-heading bottom-line">Specification</h2>
         </div>
         <div class="section why-use">
-          <h2>Why Use Conventional Commits</h2>
+          <h2 class="sec-heading bottom-line">Why Use Conventional Commits</h2>
         </div>
         <div class="section faq">
-          <h2>FAQ</h2>
+          <h2 class="sec-heading bottom-line">FAQ</h2>
         </div>
       </div>
     </main>
