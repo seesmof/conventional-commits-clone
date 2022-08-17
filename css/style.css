@@ -9,6 +9,10 @@ body {
   background: var(--bck);
 }
 
+.container {
+  width: 1024px;
+}
+
 /* header */
 /* main */
 /* footer *//*# sourceMappingURL=style.css.map */
