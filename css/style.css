@@ -17,7 +17,7 @@ body {
 
 /* header */
 header {
-  width: 1643px;
+  width: 100%;
   height: 937px;
   background: linear-gradient(45deg, #fe5196, #f77062);
 }
