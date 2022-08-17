@@ -35,7 +35,7 @@ Conventional Commits have a really neat, simple, yet, well designed website, so 
 
 - [Live View](https://seesmof.github.io/conventional-commits-clone/)
 
-![Website Page](./img/Registration-Form.png)
+![Website Page](./img/Conventional-Commits.png)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 

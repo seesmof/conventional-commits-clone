@@ -164,11 +164,11 @@ footer .license a {
   text-decoration: none;
   color: inherit;
 }
-footer .github {
-  width: 24px;
+footer .license a:hover {
+  text-decoration: underline;
 }
-footer .github svg {
-  margin-right: 10rem;
+footer svg {
+  width: 24px;
 }
 footer .license,
 footer .netlify,
