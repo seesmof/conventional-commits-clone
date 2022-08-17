@@ -5,6 +5,10 @@
   --bck: #fff;
 }
 
+body {
+  background: var(--bck);
+}
+
 /* header */
 /* main */
 /* footer *//*# sourceMappingURL=style.css.map */
