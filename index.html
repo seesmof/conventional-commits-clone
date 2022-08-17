@@ -138,6 +138,86 @@
         </div>
         <div class="section examples">
           <h2 class="sec-heading bottom-line">Examples</h2>
+          <div class="example">
+            <h3>Commit message with description and breaking change footer</h3>
+            <pre>
+                <code>
+                  feat: allow provided config object to extend other configs
+
+                  BREAKING CHANGE: `extends` key in config file is now used for
+                  extending other config files
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>
+              Commit message with <code>!</code> to draw attention to breaking
+              change
+            </h3>
+            <pre>
+                <code>
+                  feat!: send an email to the customer when a product is shipped
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>
+              Commit message with scope and <code>!</code> to draw attention to
+              breaking change
+            </h3>
+            <pre>
+                <code>
+                  feat(api)!: send an email to the customer when a product is shipped
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>
+              Commit message with both <code>!</code> and BREAKING CHANGE footer
+            </h3>
+            <pre>
+                <code>
+                  chore!: drop support for Node 6
+
+                  BREAKING CHANGE: use JavaScript features not available in Node 6.
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>Commit message with no body</h3>
+            <pre>
+                <code>
+                  docs: correct spelling of CHANGELOG
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>Commit message with scope</h3>
+            <pre>
+                <code>
+                  feat(lang): add Polish language
+                </code>
+            </pre>
+          </div>
+          <div class="example">
+            <h3>
+              Commit message with multi-paragraph body and multiple footers
+            </h3>
+            <pre>
+                <code>
+                    fix: prevent racing of requests
+
+                    Introduce a request id and a referance to latest request. Dismiss
+                    incoming responses other than from latest request.
+
+                    Remove timeouts which were used to mitigate the racing issue but are
+                    obsolete now.
+
+                    Reviewed-by: X
+                    Refs: #123
+                </code>
+            </pre>
+          </div>
         </div>
         <div class="section specification">
           <h2 class="sec-heading bottom-line">Specification</h2>
