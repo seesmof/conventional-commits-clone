@@ -66,8 +66,10 @@
     <main>
       <div class="container">
         <h1>Conventional Commits 1.0.0</h1>
+
+        <!-- summary -->
         <div class="section summary">
-          <h2 class="sec-heading bottom-line">Summary</h2>
+          <h2 class="sec-heading">Summary</h2>
           <p class="description">
             The Conventional Commits specification is a lightweight convention
             on top of commit messages. It provides an easy set of rules for
@@ -77,17 +79,15 @@
             breaking changes made in commit messages.
           </p>
           <p>The commit message should be structured as follows:</p>
-          <hr />
+          <div class="divider"></div>
           <pre>
-            <code>
-                &lt;type&gt;[optional scope]: &lt;description&gt;
+&lt;type&gt;[optional scope]: &lt;description&gt;
 
-                [optional body]
+[optional body]
 
-                [optional footer(s)]
-            </code>
-          </pre>
-          <hr />
+[optional footer(s)]</pre
+          >
+          <div class="divider"></div>
           <p>
             The commit contains the following structural elements, to
             communicate intent to the consumers of your library:
@@ -136,18 +136,17 @@
             <code>feat(parser): add ability to parse arrays</code>.
           </p>
         </div>
+
+        <!-- examples -->
         <div class="section examples">
-          <h2 class="sec-heading bottom-line">Examples</h2>
+          <h2 class="sec-heading">Examples</h2>
           <div class="example">
             <h3>Commit message with description and breaking change footer</h3>
             <pre>
-                <code>
-                  feat: allow provided config object to extend other configs
+ feat: allow provided config object to extend other configs
 
-                  BREAKING CHANGE: `extends` key in config file is now used for
-                  extending other config files
-                </code>
-            </pre>
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files</pre
+            >
           </div>
           <div class="example">
             <h3>
@@ -155,10 +154,8 @@
               change
             </h3>
             <pre>
-                <code>
-                  feat!: send an email to the customer when a product is shipped
-                </code>
-            </pre>
+feat!: send an email to the customer when a product is shipped</pre
+            >
           </div>
           <div class="example">
             <h3>
@@ -166,59 +163,47 @@
               breaking change
             </h3>
             <pre>
-                <code>
-                  feat(api)!: send an email to the customer when a product is shipped
-                </code>
-            </pre>
+feat(api)!: send an email to the customer when a product is shipped</pre
+            >
           </div>
           <div class="example">
             <h3>
               Commit message with both <code>!</code> and BREAKING CHANGE footer
             </h3>
             <pre>
-                <code>
-                  chore!: drop support for Node 6
+chore!: drop support for Node 6
 
-                  BREAKING CHANGE: use JavaScript features not available in Node 6.
-                </code>
-            </pre>
+BREAKING CHANGE: use JavaScript features not available in Node 6.</pre
+            >
           </div>
           <div class="example">
             <h3>Commit message with no body</h3>
-            <pre>
-                <code>
-                  docs: correct spelling of CHANGELOG
-                </code>
-            </pre>
+            <pre>docs: correct spelling of CHANGELOG</pre>
           </div>
           <div class="example">
             <h3>Commit message with scope</h3>
-            <pre>
-                <code>
-                  feat(lang): add Polish language
-                </code>
-            </pre>
+            <pre>feat(lang): add Polish language</pre>
           </div>
           <div class="example">
             <h3>
               Commit message with multi-paragraph body and multiple footers
             </h3>
             <pre>
-                <code>
-                    fix: prevent racing of requests
+fix: prevent racing of requests
 
-                    Introduce a request id and a referance to latest request. Dismiss
-                    incoming responses other than from latest request.
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-                    Remove timeouts which were used to mitigate the racing issue but are
-                    obsolete now.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
-                    Reviewed-by: X
-                    Refs: #123
-                </code>
-            </pre>
+Reviewed-by: X
+Refs: #123</pre
+            >
           </div>
         </div>
+
+        <!-- specs -->
         <div class="section specification">
           <h2 class="sec-heading bottom-line">Specification</h2>
           <p>
@@ -321,6 +306,8 @@
             </li>
           </ol>
         </div>
+
+        <!-- why use -->
         <div class="section why-use">
           <h2 class="sec-heading bottom-line">Why Use Conventional Commits</h2>
           <ul class="indent">
@@ -340,6 +327,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- faq -->
         <div class="section faq">
           <h2 class="sec-heading bottom-line">FAQ</h2>
           <div class="sec-faq">
@@ -417,7 +406,8 @@
             <h3>What do I do if I accidentally use the wrong commit type?</h3>
             <h4>
               When you used a type that’s of the spec but not the correct type,
-              e.g. <code>fix</code> instead of <code>feat</code>
+              e.g. <code class="color">fix</code> instead of
+              <code class="color">feat</code>
             </h4>
             <p>
               Prior to merging or releasing the mistake, we recommend using
@@ -427,7 +417,8 @@
             </p>
             <h4>
               When you used a type not of the spec, e.g.
-              <code>feet</code> instead of <code>feat</code>
+              <code class="color">feet</code> instead of
+              <code class="color">feat</code>
             </h4>
             <p>
               In a worst case scenario, it’s not the end of the world if a
@@ -468,13 +459,10 @@
               footer that references the commit SHAs that are being reverted:
             </p>
             <pre>
-                <code>
-                    revert: let us never again speak of the noodle incident
+revert: let us never again speak of the noodle incident
 
-                    Refs: 676104e, a215868
-
-                </code>
-            </pre>
+Refs: 676104e, a215868</pre
+            >
           </div>
         </div>
       </div>
@@ -493,8 +481,7 @@
           alt="Deploys by Netlify"
         />
       </div>
-      <div class="github">
-        <a href="#">
+      <a href="#">
           <svg class="github" viewBox="0 0 128 128">
             <path
               fill-rule="evenodd"
@@ -505,7 +492,8 @@
               d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
             ></path>
           </svg>
-        </a>
+      </a>
+
       </div>
     </footer>
 
