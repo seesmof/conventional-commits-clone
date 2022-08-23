@@ -17,7 +17,7 @@ body {
 
 /* header */
 header {
-  width: 100%;
+  width: 1643px;
   height: 937px;
   background: linear-gradient(45deg, #fe5196, #f77062);
 }
@@ -47,52 +47,30 @@ header .header a {
 header .header a:hover {
   color: var(--bck-hover);
 }
-header .main .hero {
-  margin: 270px 48px;
-  color: var(--bck);
-  text-align: center;
-}
-header .main .hero h1 {
-  font-size: 3.8rem;
-  font-weight: 700;
-}
-header .main .hero p {
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-header .main .hero .button {
+header .main .button {
   border: 1px solid var(--bck);
   background: rgba(0, 0, 0, 0);
   color: var(--bck);
   padding: 0.5rem;
-  margin: 3rem 12px;
   border-radius: 50px;
+  margin-right: 1rem;
   width: 10rem;
   transition: 0.3s ease;
 }
-header .main .hero .button:hover {
+header .main .button:hover {
   background: var(--bck);
   color: var(--txt);
 }
-header .main .hero .main-side {
-  padding: 0 47px;
-  float: right;
+header img {
+  width: 40%;
 }
-header .main .hero .main-side img {
-  width: 245px;
-  height: 655px;
-  -o-object-fit: cover;
-     object-fit: cover;
+header h1 {
+  font-size: 3.5rem;
 }
 
 /* main */
-main {
-  margin-top: 4rem;
-}
-main .container {
-  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 10px 0px, rgba(0, 0, 0, 0.02) 0px 2px 20px 10px;
-  border-radius: 8px;
-  padding: 3rem;
+main .card {
+  margin-top: -4rem;
 }
 main .container a {
   color: var(--acc);
